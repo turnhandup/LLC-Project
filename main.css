@@ -1,0 +1,159 @@
+@font-face {
+    font-family: AGaramondPro;
+    src: url(fonts/AGaramondPro-Bold.otf);
+}
+body{
+    font-family: AGaramondPro;
+
+}
+.section{
+    display: table;
+    height:32vh;
+    text-align:center;
+    width:98vw;
+}
+.top, .middle, .bottom{
+    display:table-cell;
+    vertical-align: middle;
+}
+.top p, .bottom{
+    font-size:2.5vh;
+    letter-spacing: 0.3vw;
+}
+
+.middle .lines{
+    margin:0vh 5vw 0 5vw;
+    padding-top:30px;
+    position:relative;
+    top:2vh;
+}
+.middle .work, .middle .contact{
+    letter-spacing:1vw;
+    font-size:3.5vh;
+}
+.figures img{
+    width:1.5vw;
+    height:1.5vw;
+}
+.figures .row img{
+    margin-left:-1.8vw;
+}
+.apple{
+    width:1.8vw;
+    height:1.8vw;
+}
+.figures-wrapper{
+    width:15vw;
+    display:inline-block;
+}
+.apple{
+    margin-left:2vw;
+}
+.lines img{
+    width:8vw;
+    height:8vh;
+}
+.bottom .plus {
+    width: 10vw;
+    height: 10vh;
+    margin: 0px 5vw;
+    position: relative;
+    top: 4vh;
+}
+
+@media(max-width:576px){
+    .section:nth-of-type(1){
+        display:none;
+    }
+    .section:nth-of-type(2){
+        margin-top:10vh;
+        height:50vh;
+    }
+    .figures img{
+        width:5vw;
+        height:5vw;
+    }
+    .figures .row img{
+        margin-left:-6vw;
+    }
+    .figures img:nth-of-type(1){
+        margin-right:1vw;
+        margin-top:1vw;
+    }
+    .figures-wrapper, .lines{
+        width:100%;
+        display:block;
+        margin-left:0;
+        margin-right:0;
+    }
+    .lines img{
+        width:11vw;
+        height:11vw;
+    }
+    .middle .lines{
+        margin:8vh 0vw 8vh 0vw;
+        padding-top:0px;
+    }
+    .middle .work, .middle .contact{
+        letter-spacing:4vw;
+        font-size:3vh;
+    }
+    .apple{
+        width:6vw;
+        height:6vw;
+    }
+}
+@media(min-width:576px) and (max-width:1025px){
+    .section{
+        height:20vh;
+    }
+    .section:nth-of-type(2){
+        margin-top:0vh;
+    }
+    .lines{
+        width:15vw;
+        display:inline-block;
+    }
+    .middle .lines{
+        margin:5vh 0vw 5vh 0vw;
+        padding-top:0px;
+    }
+    .figures-wrapper, .lines{
+        width:100%;
+        display:block;
+        margin-left:0;
+        margin-right:0;
+    }
+    .figures img{
+        width:4vw;
+        height:4vw;
+    }
+    .figures .row img{
+        margin-left:-4.5vw;
+    }
+    .figures img:nth-of-type(1){
+        margin-right:1vw;
+        margin-top:1vw;
+    }
+    .apple{
+        width:6vw;
+        height:6vw;
+    }
+}
+@media(min-width:1025px) and (max-width:1920px){
+    .middle .lines{
+        margin:0vh 2vw 0vh 2vw;
+    }
+    .bottom .plus{
+        margin:0px 0vw;
+    }
+    .figures-wrapper{
+        width:10vw;
+    }
+}
+@media(min-width:1025px){
+    .figures-wrapper{
+        position:relative;
+        top:0.8vw;
+    }
+}
