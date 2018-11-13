@@ -29,36 +29,40 @@ body{
 }
 .middle .work, .middle .contact{
     letter-spacing:1vw;
-    font-size:3.5vh;
+    font-size:2.7vh;
 }
 .figures img{
-    width:1.5vw;
-    height:1.5vw;
+    width:1.2vw;
+    height:1.2vw;
 }
 .figures .row img{
-    margin-left:-1.8vw;
+    margin-left:-1.5vw;
+}
+.figures img:nth-of-type(1){
+    margin-right:0.4vw;
+    margin-top:0.4vw;
 }
 .apple{
-    width:1.8vw;
-    height:1.8vw;
+    width:1.3vw;
+    height:1.3vw;
 }
 .figures-wrapper{
     width:15vw;
     display:inline-block;
 }
 .apple{
-    margin-left:2vw;
+    margin-left:1vw;
 }
 .lines img{
-    width:8vw;
-    height:8vh;
+    width:6vw;
+    height:6vh;
 }
 .bottom .plus {
-    width: 10vw;
-    height: 10vh;
-    margin: 0px 5vw;
+    width: 6vw;
+    height: 6vh;
+    margin: 0px 0vw;
     position: relative;
-    top: 4vh;
+    top: 2vh;
 }
 
 @media(max-width:576px){
@@ -70,11 +74,11 @@ body{
         height:50vh;
     }
     .figures img{
-        width:5vw;
-        height:5vw;
+        width:4vw;
+        height:4vw;
     }
     .figures .row img{
-        margin-left:-6vw;
+        margin-left:-5vw;
     }
     .figures img:nth-of-type(1){
         margin-right:1vw;
@@ -96,11 +100,25 @@ body{
     }
     .middle .work, .middle .contact{
         letter-spacing:4vw;
-        font-size:3vh;
+        font-size:2.5vh;
     }
     .apple{
-        width:6vw;
-        height:6vw;
+        width:5vw;
+        height:5vw;
+    }
+    .section:nth-of-type(3){
+        margin-top:-10vh;
+    }
+    .bottom{
+        vertical-align: bottom;
+        font-size:2.3vh;
+    }
+    .bottom .plus{
+        width: 10vw;
+        height: 10vh;
+        margin: 0px 4vw;
+        position: relative;
+        top: 4vh;
     }
 }
 @media(min-width:576px) and (max-width:1025px){
@@ -110,12 +128,13 @@ body{
     .section:nth-of-type(2){
         margin-top:0vh;
     }
+    
     .lines{
         width:15vw;
         display:inline-block;
     }
     .middle .lines{
-        margin:5vh 0vw 5vh 0vw;
+        margin:8vh 0vw 8vh 0vw;
         padding-top:0px;
     }
     .figures-wrapper, .lines{
@@ -129,7 +148,7 @@ body{
         height:4vw;
     }
     .figures .row img{
-        margin-left:-4.5vw;
+        margin-left:-4.4vw;
     }
     .figures img:nth-of-type(1){
         margin-right:1vw;
@@ -139,21 +158,48 @@ body{
         width:6vw;
         height:6vw;
     }
-}
-@media(min-width:1025px) and (max-width:1920px){
-    .middle .lines{
-        margin:0vh 2vw 0vh 2vw;
+    .section:nth-of-type(3){
+        margin-top:-7vh;
+    }
+    .bottom{
+        font-size:2.3vh;
+        vertical-align: bottom;
     }
     .bottom .plus{
-        margin:0px 0vw;
+        width: 10vw;
+        height: 10vh;
+        margin: 0px 4vw;
+        position: relative;
+        top: 4vh;
+    }
+}
+@media(min-width:1025px) {
+    .top p{
+        margin-top:18vh;
+    }
+    .section:nth-of-type(2){
+        margin-bottom:-3vh;
+    }
+    .middle .lines:nth-of-type(1){
+        margin:0vh 5vw 0vh 8vw;
+    }
+    .middle .lines:nth-of-type(2){
+        margin:0vh 5vw 0vh 5vw;
+    }
+    .bottom .plus{
+        margin:0px 2vw;
     }
     .figures-wrapper{
         width:10vw;
+    }
+    .top p, .bottom{
+        font-size:2vh;
+        letter-spacing: 0.3vw;
     }
 }
 @media(min-width:1025px){
     .figures-wrapper{
         position:relative;
-        top:0.8vw;
+        top:1.2vw;
     }
 }
