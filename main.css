@@ -6,14 +6,22 @@ body{
     font-family: AGaramondPro;
 
 }
+.external-wrapper{
+    display:table;
+    width:100%;
+}
+.inner-wrapper{
+    display: table-cell;
+    vertical-align: middle;
+}
 .section{
     display: table;
-    height:32vh;
     text-align:center;
     width:98vw;
 }
-.top, .middle, .bottom{
+.middle{
     display:table-cell;
+    height:50vh;
     vertical-align: middle;
 }
 .top p, .bottom{
@@ -31,12 +39,21 @@ body{
     letter-spacing:1vw;
     font-size:2.7vh;
 }
+.middle span a{
+    text-decoration:none;
+    color:black;
+}
 .figures img{
     width:1.2vw;
     height:1.2vw;
 }
 .figures .row img{
-    margin-left:-1.5vw;
+    margin-left:-1.3vw;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    .figures .row img{
+        margin-left:-1.5vw;
+    }
 }
 .figures img:nth-of-type(1){
     margin-right:0.4vw;
@@ -106,12 +123,14 @@ body{
         width:5vw;
         height:5vw;
     }
-    .section:nth-of-type(3){
-        margin-top:-10vh;
-    }
+ 
     .bottom{
         vertical-align: bottom;
         font-size:2.3vh;
+    }
+    .three{
+        position: absolute;
+        bottom:7vh;
     }
     .bottom .plus{
         width: 10vw;
@@ -120,15 +139,37 @@ body{
         position: relative;
         top: 4vh;
     }
+    .bottom span:nth-of-type(1){
+        float:left;
+        width:40%;
+        text-align:right;
+        position: relative;
+        top:7.5vh;
+    }
+    .bottom span:nth-of-type(2){
+        float:left;
+        width:20%;
+        text-align:center;
+    }
+    .bottom span:nth-of-type(3){
+        float:left;
+        width:40%;
+        text-align:left;
+        position: relative;
+        top:7.5vh;
+    }
 }
 @media(min-width:576px) and (max-width:1025px){
     .section{
-        height:20vh;
+        height:15vh;
     }
     .section:nth-of-type(2){
         margin-top:0vh;
     }
-    
+    .three{
+        position: absolute;
+        bottom:0vh;
+    }
     .lines{
         width:15vw;
         display:inline-block;
@@ -158,13 +199,12 @@ body{
         width:6vw;
         height:6vw;
     }
-    .section:nth-of-type(3){
-        margin-top:-7vh;
-    }
+ 
     .bottom{
         font-size:2.3vh;
-        vertical-align: bottom;
     }
+    
+    
     .bottom .plus{
         width: 10vw;
         height: 10vh;
@@ -174,10 +214,10 @@ body{
     }
 }
 @media(min-width:1025px) {
-    .top p{
-        margin-top:18vh;
-    }
+
+ 
     .section:nth-of-type(2){
+        margin-top:-3vh;
         margin-bottom:-3vh;
     }
     .middle .lines:nth-of-type(1){
@@ -186,9 +226,7 @@ body{
     .middle .lines:nth-of-type(2){
         margin:0vh 5vw 0vh 5vw;
     }
-    .bottom .plus{
-        margin:0px 2vw;
-    }
+   
     .figures-wrapper{
         width:10vw;
     }
@@ -196,10 +234,17 @@ body{
         font-size:2vh;
         letter-spacing: 0.3vw;
     }
-}
-@media(min-width:1025px){
     .figures-wrapper{
         position:relative;
         top:1.2vw;
+    }
+    .inner-wrapper{
+        height:96vh;
+    }
+}
+@media(min-width:2560px){
+    .figures .rect{
+        width:1.15vw;
+        height:1.15vw;
     }
 }
