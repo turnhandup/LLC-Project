@@ -48,13 +48,9 @@ body{
     height:1.2vw;
 }
 .figures .row img{
-    margin-left:-1.3vw;
+    /* margin-left:-1.3vw; */
 }
-@media screen and (-webkit-min-device-pixel-ratio:0) { 
-    .figures .row img{
-        margin-left:-1.5vw;
-    }
-}
+
 .figures img:nth-of-type(1){
     margin-right:0.4vw;
     margin-top:0.4vw;
@@ -64,7 +60,7 @@ body{
     height:1.3vw;
 }
 .figures-wrapper{
-    width:15vw;
+    width:5vw;
     display:inline-block;
 }
 .apple{
@@ -196,8 +192,8 @@ body{
         margin-top:1vw;
     }
     .apple{
-        width:6vw;
-        height:6vw;
+        width:4vw;
+        height:4vw;
     }
  
     .bottom{
@@ -227,9 +223,7 @@ body{
         margin:0vh 5vw 0vh 5vw;
     }
    
-    .figures-wrapper{
-        width:10vw;
-    }
+
     .top p, .bottom{
         font-size:2vh;
         letter-spacing: 0.3vw;
@@ -237,14 +231,20 @@ body{
     .figures-wrapper{
         position:relative;
         top:1.2vw;
+        text-align:left;
     }
     .inner-wrapper{
         height:96vh;
     }
+
 }
 @media(min-width:2560px){
     .figures .rect{
         width:1.15vw;
         height:1.15vw;
+    }
+    .apple{
+        width:1.3vw;
+        height:1.3vw;
     }
 }
