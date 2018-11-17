@@ -55,16 +55,10 @@ body{
     margin-right:0.4vw;
     margin-top:0.4vw;
 }
-.apple{
-    width:1.3vw;
-    height:1.3vw;
-}
+
 .figures-wrapper{
     width:5vw;
     display:inline-block;
-}
-.apple{
-    margin-left:1vw;
 }
 .lines img{
     width:6vw;
@@ -75,9 +69,27 @@ body{
     height: 6vh;
     margin: 0px 0vw;
     position: relative;
-    top: 2vh;
+    top: 6vh;
 }
-
+.bottom span:nth-of-type(1){
+    float:left;
+    width:45%;
+    text-align:right;
+    position: relative;
+    top:7.5vh;
+}
+.bottom span:nth-of-type(2){
+    float:left;
+    width:10%;
+    text-align:center;
+}
+.bottom span:nth-of-type(3){
+    float:left;
+    width:45%;
+    text-align:left;
+    position: relative;
+    top:7.5vh;
+}
 @media(max-width:576px){
     .section:nth-of-type(1){
         display:none;
@@ -117,7 +129,7 @@ body{
     }
     .apple{
         width:5vw;
-        height:5vw;
+        height:3.7vw;
     }
  
     .bottom{
@@ -193,20 +205,37 @@ body{
     }
     .apple{
         width:4vw;
-        height:4vw;
+        height:2.4vw;
     }
  
     .bottom{
         font-size:2.3vh;
     }
-    
-    
     .bottom .plus{
         width: 10vw;
         height: 10vh;
         margin: 0px 4vw;
         position: relative;
         top: 4vh;
+    }
+    .bottom span:nth-of-type(1){
+        float:left;
+        width:40%;
+        text-align:right;
+        position: relative;
+        top:7.5vh;
+    }
+    .bottom span:nth-of-type(2){
+        float:left;
+        width:20%;
+        text-align:center;
+    }
+    .bottom span:nth-of-type(3){
+        float:left;
+        width:40%;
+        text-align:left;
+        position: relative;
+        top:7.5vh;
     }
 }
 @media(min-width:1025px) {
@@ -237,15 +266,21 @@ body{
         position: relative;
         bottom: 0.025vw;
     }
-
+    .apple{
+        width:0.9vw;
+        height:0.9vw;
+        margin-left:1vw;
+    }
 }
-@media(min-width:2560px){
+@media(min-width:1980px){
     .figures .rect{
         width:1.15vw;
         height:1.15vw;
     }
     .apple{
-        width:1.3vw;
-        height:1.3vw;
+        width:1vw;
+        height:1vw;
+        margin-left:1vw;
     }
+    
 }
