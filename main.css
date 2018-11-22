@@ -46,9 +46,8 @@ body{
     width:1.2vw;
     height:1.2vw;
 }
-
-.figures .row img{
-    /* margin-left:-1.3vw; */
+.figures-wrapper.figures-wrapper-two{
+    width:6vw;
 }
 
 .figures img:nth-of-type(1){
@@ -343,7 +342,7 @@ body{
     .llc{
         display:inline-block;
         animation-delay:4s;
-        animation-duration: 3s;
+        animation-duration: 2s;
         animation-name: fadeAndScale5;
         animation-fill-mode: forwards;
         animation-timing-function:  linear;
