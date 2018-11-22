@@ -4,7 +4,6 @@
 }
 body{
     font-family: AGaramondPro;
-
 }
 .external-wrapper{
     display:table;
@@ -47,6 +46,7 @@ body{
     width:1.2vw;
     height:1.2vw;
 }
+
 .figures .row img{
     /* margin-left:-1.3vw; */
 }
@@ -55,7 +55,12 @@ body{
     margin-right:0.4vw;
     margin-top:0.4vw;
 }
+.apple{
+    width:1.3vw;
+    height:1.3vw;
+    margin-left:1vw;
 
+}
 .figures-wrapper{
     width:5vw;
     display:inline-block;
@@ -71,19 +76,19 @@ body{
     position: relative;
     top: 6vh;
 }
-.bottom span:nth-of-type(1){
+.bottom span:nth-of-type(2){
     float:left;
     width:45%;
     text-align:right;
     position: relative;
     top:7.5vh;
 }
-.bottom span:nth-of-type(2){
+.bottom span:nth-of-type(3){
     float:left;
     width:10%;
     text-align:center;
 }
-.bottom span:nth-of-type(3){
+.bottom span:nth-of-type(4){
     float:left;
     width:45%;
     text-align:left;
@@ -91,6 +96,9 @@ body{
     top:7.5vh;
 }
 @media(max-width:576px){
+    .figures-wrapper.figures-wrapper-two{
+        display:none;
+    }
     .section:nth-of-type(1){
         display:none;
     }
@@ -147,19 +155,19 @@ body{
         position: relative;
         top: 4vh;
     }
-    .bottom span:nth-of-type(1){
+    .bottom span:nth-of-type(2){
         float:left;
         width:40%;
         text-align:right;
         position: relative;
         top:7.5vh;
     }
-    .bottom span:nth-of-type(2){
+    .bottom span:nth-of-type(3){
         float:left;
         width:20%;
         text-align:center;
     }
-    .bottom span:nth-of-type(3){
+    .bottom span:nth-of-type(4){
         float:left;
         width:40%;
         text-align:left;
@@ -168,6 +176,9 @@ body{
     }
 }
 @media(min-width:576px) and (max-width:1025px){
+    .figures-wrapper.figures-wrapper-two{
+        display:none;
+    }
     .section{
         height:15vh;
     }
@@ -205,7 +216,7 @@ body{
     }
     .apple{
         width:4vw;
-        height:2.4vw;
+        height:4vw;
     }
  
     .bottom{
@@ -218,25 +229,243 @@ body{
         position: relative;
         top: 4vh;
     }
-    .bottom span:nth-of-type(1){
+    .bottom span:nth-of-type(2){
         float:left;
-        width:40%;
-        text-align:right;
+        width:25%;
+        margin-left:15%;
+        text-align:center;
         position: relative;
         top:7.5vh;
     }
-    .bottom span:nth-of-type(2){
+    .bottom span:nth-of-type(3){
         float:left;
         width:20%;
         text-align:center;
     }
-    .bottom span:nth-of-type(3){
+    .bottom span:nth-of-type(4){
         float:left;
-        width:40%;
-        text-align:left;
+        width:25%;
+        margin-right:15%;
+        text-align:center;
         position: relative;
         top:7.5vh;
     }
+
+}
+@media(min-width:576px){
+    .figures-wrapper-one,
+    .lines-one, 
+    .lines-two, 
+    .work-apple, 
+    .contact, 
+    .llc, 
+    .session,
+    .plus-span,
+    .number {
+        opacity:0;
+    }
+    #triangle-two {  
+        opacity:0;
+
+        animation-duration: 3s;
+        animation-name: fadeAndScale1;
+        animation-timing-function:  linear;
+        animation-fill-mode: both;
+        animation-direction: alternate;
+
+    }
+    #square-two{  
+        opacity:0;
+        animation-duration: 3s;
+        animation-name: fadeAndScale2;
+        animation-timing-function:  linear;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+
+    }
+    #circle-two {  
+        opacity:0;
+        animation-duration: 3s;
+        animation-name: fadeAndScale3;
+        animation-timing-function:  linear;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+
+    }
+    .figures-wrapper-one{
+        animation-delay:3s;
+        animation-duration: .5s;
+        animation-name: fadeAndScale4;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .lines-one{
+        animation-delay:3.2s;
+        animation-duration: .5s;
+        animation-name: fadeAndScale4;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .lines-two{
+        animation-delay:3.5s;
+        animation-duration: .5s;
+        animation-name: fadeAndScale4;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+   
+    .work-apple{
+        display:inline-block;
+        animation-delay:3s;
+        animation-duration: 2s;
+        animation-name: fadeAndScale5;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .contact{
+        display:inline-block;
+        animation-delay:3.7s;
+        animation-duration: 2s;
+        animation-name: fadeAndScale5;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .llc{
+        display:inline-block;
+        animation-delay:4s;
+        animation-duration: 3s;
+        animation-name: fadeAndScale5;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .session,
+    .plus-span,
+    .number{
+        animation-delay:4s;
+        animation-duration: 2s;
+        animation-name: fadeAndScale6;
+        animation-fill-mode: forwards;
+        animation-timing-function:  linear;
+        animation-direction: alternate;
+
+    }
+    .figures-wrapper.figures-wrapper-two{
+        position: absolute;
+        top:49%;
+        left:47%;
+    }
+    .figures-two img:nth-of-type(1),
+    .figures-two img:nth-of-type(2){
+        margin-right:0.4vw;
+        margin-top:0.4vw;
+    }
+    @keyframes fadeAndScale1 {
+        0% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+        }
+       
+        13%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        96%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        100%{
+            opacity: 0;
+            transform: scale(1, 1);
+        }
+       
+    }
+    @keyframes fadeAndScale2 {
+        5% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+        }
+       
+        23%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        95%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        97%{
+            opacity: 0;
+        }
+       
+    }
+    @keyframes fadeAndScale3 {
+        15% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+        }
+        33%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        90%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+        96%{
+            opacity: 0;
+            transform: scale(1, 1);
+        }
+       
+    }
+    @keyframes fadeAndScale4 {
+        15% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+       
+    }
+    @keyframes fadeAndScale5 {
+        0% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+       
+    }
+    @keyframes fadeAndScale6 {
+        0% {
+            opacity: 0;
+            transform: scale(0.7, 0.7);
+
+        }
+        100%{
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+       
+    }
+
+
+
 }
 @media(min-width:1025px) {
     .section:nth-of-type(2){
@@ -266,11 +495,28 @@ body{
         position: relative;
         bottom: 0.025vw;
     }
-    .apple{
-        width:0.9vw;
-        height:0.9vw;
-        margin-left:1vw;
+    .bottom span:nth-of-type(2){
+        float:left;
+        width:15%;
+        margin-left:32%;
+        text-align:center;
+        position: relative;
+        top:7.5vh;
     }
+    .bottom span:nth-of-type(3){
+        float:left;
+        width:6%;
+        text-align:center;
+    }
+    .bottom span:nth-of-type(4){
+        float:left;
+        width:13%;
+        margin-right:34%;
+        text-align:center;
+        position: relative;
+        top:7.5vh;
+    }
+   
 }
 @media(min-width:1980px){
     .figures .rect{
@@ -278,8 +524,8 @@ body{
         height:1.15vw;
     }
     .apple{
-        width:1vw;
-        height:1vw;
+        width:1.3vw;
+        height:1.3vw;
         margin-left:1vw;
     }
     
