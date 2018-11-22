@@ -1,15 +1,33 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
-    // $("#triangle-two").fadeIn(700);
-    // $("#square-two").fadeIn(1000);
-    // $("#circle-two").fadeIn(1300);
-    // $("#circle-two").delay(1500).fadeOut(700);
-    // $("#square-two").delay(2000).fadeOut(1000);
-    // $("#triangle-two").delay(2300).fadeOut(1300);
-    // $('#triangle-two').animate({
-    //     opacity: 1,
-    //     width: '+=10'
-    //   }, 5000, function() {
-    //     // Animation complete.
-    //   });
-});
+window.onload = function() {
+    function addCommas(nStr) {
+       nStr += '';
+       var x = nStr.split('.');
+       var x1 = x[0];
+       var x2 = x.length > 1 ? '.' + x[1] : '';
+       var rgx = /(\d+)(\d{3})/;
+       while (rgx.test(x1)) {
+               x1 = x1.replace(rgx, '$1' + ',' + '$2');
+       }
+       return x1 + x2;
+   }
+   var number = 62371673;
+   const getMonthsPassed = () => {
+       const startDate = new Date(2018, 10, 22); // month start at 0
+       const currentDate = new Date();
+       const monthDifference =
+       (currentDate.getFullYear() - startDate.getFullYear()) * 12 +
+       (currentDate.getMonth() - startDate.getMonth());
+       return monthDifference;
+   };
+   if(getMonthsPassed!==1){
+       number = number + 1575042*getMonthsPassed();
+       var numberFormatted=addCommas(number.toString());
+       document.getElementById("number").innerHTML = numberFormatted;
+   }
+   else{
+       var numberFormatted=addCommas(number.toString());
+
+       document.getElementById("number").innerHTML = numberFormatted;
+   }
+};
+  
