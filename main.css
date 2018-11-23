@@ -266,7 +266,7 @@ body{
     #triangle-two {  
         opacity:0;
 
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: fadeAndScale1;
         animation-timing-function:  linear;
         animation-fill-mode: both;
@@ -275,7 +275,7 @@ body{
     }
     #square-two{  
         opacity:0;
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: fadeAndScale2;
         animation-timing-function:  linear;
         animation-fill-mode: forwards;
@@ -284,7 +284,7 @@ body{
     }
     #circle-two {  
         opacity:0;
-        animation-duration: 3s;
+        animation-duration: 1.5s;
         animation-name: fadeAndScale3;
         animation-timing-function:  linear;
         animation-fill-mode: forwards;
@@ -292,7 +292,7 @@ body{
 
     }
     .figures-wrapper-one{
-        animation-delay:3s;
+        animation-delay:1.5s;
         animation-duration: .5s;
         animation-name: fadeAndScale4;
         animation-fill-mode: forwards;
@@ -301,7 +301,7 @@ body{
 
     }
     .lines-one{
-        animation-delay:3.2s;
+        animation-delay:1.7s;
         animation-duration: .5s;
         animation-name: fadeAndScale4;
         animation-fill-mode: forwards;
@@ -310,7 +310,7 @@ body{
 
     }
     .lines-two{
-        animation-delay:3.5s;
+        animation-delay:2s;
         animation-duration: .5s;
         animation-name: fadeAndScale4;
         animation-fill-mode: forwards;
@@ -321,7 +321,7 @@ body{
    
     .work-apple{
         display:inline-block;
-        animation-delay:3s;
+        animation-delay:1.5s;
         animation-duration: 2s;
         animation-name: fadeAndScale5;
         animation-fill-mode: forwards;
@@ -331,7 +331,7 @@ body{
     }
     .contact{
         display:inline-block;
-        animation-delay:3.7s;
+        animation-delay:1.5s;
         animation-duration: 2s;
         animation-name: fadeAndScale5;
         animation-fill-mode: forwards;
@@ -341,7 +341,7 @@ body{
     }
     .llc{
         display:inline-block;
-        animation-delay:4s;
+        animation-delay:1.5s;
         animation-duration: 2s;
         animation-name: fadeAndScale5;
         animation-fill-mode: forwards;
@@ -352,7 +352,7 @@ body{
     .session,
     .plus-span,
     .number{
-        animation-delay:4s;
+        animation-delay:1.5s;
         animation-duration: 2s;
         animation-name: fadeAndScale6;
         animation-fill-mode: forwards;
